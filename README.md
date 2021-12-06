@@ -38,6 +38,7 @@ Output files will be created in the directory as the files provided as arguments
 
 
 Class Diagram
+
 <img width="826" alt="Screen Shot 2021-12-05 at 11 32 03 PM" src="https://user-images.githubusercontent.com/88958925/144823760-b2c7cc8d-64b7-46c3-97ce-ed0eaba283d0.png">
 
 # Screenshots of Test Cases
