@@ -22,7 +22,6 @@ public class CardReaderImpl implements ReaderFactory{
                 String line1="";
                 int c1=0;
                 while((line1=br1.readLine())!=null){
-                    System.out.println("True1");
                     if(c1==0){
                         c1=1;
                     }

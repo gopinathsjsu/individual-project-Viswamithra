@@ -20,28 +20,24 @@ public class ExitUtility {
                 catquant.put("Luxury","5");
                 catquant.put("Misc","6");
                 int error=0;
-                PrintWriter writer = new PrintWriter("/Users/viswamithra/Downloads/Cardproject/resources/output.txt");
-                FileWriter cwriter = new FileWriter("/Users/viswamithra/Downloads/Cardproject/resources/CreditCards.csv" ,true);
+                PrintWriter writer = new PrintWriter("/Users/viswamithra/Downloads/IndividualProject_Viswamithra/resources/output.txt");
+                FileWriter cwriter = new FileWriter("/Users/viswamithra/Downloads/IndividualProject_Viswamithra/resources/CreditCards.csv" ,true);
                 BufferedWriter out=new BufferedWriter(cwriter);
                 BufferedReader br3=new BufferedReader(new FileReader(inputFilePath));
                 String line2="";
                 int c2=0;
                 while((line2=br3.readLine())!=null){
-                    System.out.println("true3");
                     if(c2==0){
                         c2=1;
-                    }
-
-                    else{
+                    }else{
                         String[] ans=line2.split(" ");
                         String item=ans[0];
                         Double quanty=Double.parseDouble(ans[1]);
                         String cardn=ans[2]+" "+ ans[3] + " "+ ans[4]+" " + ans[5];
-                        if(Integer.parseInt(catquant.get(stockRepository.getcategoryItems().get(item)))>0){
-                            System.out.println("Item ==" + item);
-                            System.out.println("Quantity ==" + quanty);
-                            System.out.println(stockRepository.getquantities().get(item));
-                            if(Integer.parseInt(stockRepository.getquantities().get(item))>=quanty){
+                        if(Double.parseDouble(catquant.get(stockRepository.getcategoryItems().get(item)))>0){
+
+                            if(Double.parseDouble(stockRepository.getquantities().get(item))>=quanty){
+
                                 amtpaid+=quanty*Double.parseDouble(stockRepository.getPrices().get(item));
                                 Double x=Double.parseDouble(stockRepository.getquantities().get(item));
                                 x=x-quanty;
@@ -57,7 +53,6 @@ public class ExitUtility {
 
                             }
                             else{
-                                //writer.write("please correct quantities: "+ "\n");
                                 writer.write("Please correct the quantities"+" \n" +"Items with incorrect quantities" +"\n" + item+"\n");
                                 error=1;
                                 break;
@@ -81,7 +76,6 @@ public class ExitUtility {
                 out.close();
                 
                 writer.close();
-
             }
             catch(Exception ex)
             {

@@ -21,7 +21,6 @@ public class FileReaderImpl implements ReaderFactory{
                 String line="";
                 int c=0;
                 while((line=br.readLine())!=null){
-                    System.out.println("True2");
                     if(c==0){
                         c=1;
                     }
