@@ -10,6 +10,17 @@ Created a java application that contains the inventory information in which the 
 # Steps to run the application
 
 
+  * Run the following command in the Terminal:  
+  
+    Compile:
+      Javac Project.java
+  * Run:
+  *  
+java Project "/Users/viswamithra/Downloads/IndividualProject_Viswamithra/resources/CreditCards.csv" "/Users/viswamithra/Downloads/IndividualProject_Viswamithra/resources/Dataset.csv" "/Users/viswamithra/Downloads/IndividualProject_Viswamithra/resources/Input1 - Sheet1.csv" 
+Output files will be created in the directory as the files provided as arguments to run the JAR.
+
+
+
 # Design Patterns
 
 * Singleton
@@ -27,7 +38,7 @@ Created a java application that contains the inventory information in which the 
 
 
 Class Diagram
-![image](https://user-images.githubusercontent.com/88958925/144764419-120ad5c9-6ac6-4efe-b914-ffeaaaf61c36.png)
+<img width="826" alt="Screen Shot 2021-12-05 at 11 32 03 PM" src="https://user-images.githubusercontent.com/88958925/144823760-b2c7cc8d-64b7-46c3-97ce-ed0eaba283d0.png">
 
 # Screenshots of Test Cases
 
