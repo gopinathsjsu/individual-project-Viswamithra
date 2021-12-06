@@ -27,7 +27,10 @@ Created a java application that contains the inventory information in which the 
 
 
 Class Diagram
-![image](https://user-images.githubusercontent.com/88958925/144764419-120ad5c9-6ac6-4efe-b914-ffeaaaf61c36.png)
+
+
+<img width="826" alt="Screen Shot 2021-12-05 at 11 32 03 PM" src="https://user-images.githubusercontent.com/88958925/144805771-97e28d7d-d276-427c-9a56-ad592fa2af0c.png">
+
 
 # Screenshots of Test Cases
 
